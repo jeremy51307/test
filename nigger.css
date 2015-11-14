@@ -1,0 +1,147 @@
+
+html,body, #container{
+  	height: 100%;
+      }
+
+      #container{
+	   font-family:"微軟正黑體";
+	      width: 100%;
+	         background-color: #FFF;
+		    margin: 0 auto; /* 兩側的自動值與寬度結合後，版面便會置中對*/
+		       overflow:visible;
+		     }
+		     #nav-content{
+		          width: 100%;
+			     background-color:#FF3;
+			        height:15%;
+				   box-sizing: border-box;
+				   	overflow: hidden;
+				      }
+				      #nav-content a{
+						width: 20%;
+							display: inline-block;
+								height:100%;
+									text-align: center;
+										text-decoration: none;
+											box-sizing: border-box;
+												overflow: hidden;
+											      }
+											      #nav-content a *{
+													height: 100%;
+														text-decoration: none;
+															box-sizing: border-box;
+														      }
+
+														      #left-block{
+																vertical-align: top;
+																	/*float: left;*/
+																	display:inline-block;
+																		width: 18%;
+																			background-color: #FFF;
+																				color:#F60;
+																					padding: 1%;
+																						margin:0;
+																					      }
+																					      #content{
+																							vertical-align:top;
+																								display:inline-block;
+																									width:81.7%;
+																										height:100%;
+																											float:right;
+																												background-color:none;
+																													padding:1%;
+																														margin:0;
+																													      }
+																													      #content ul, #content ol { 
+																															padding: 0 15px 15px 40px; /* 這個欄位間隔反映出上方標題和段落規則中的右方間隔。當欄位間隔位於下方時，便可將清單中的其他元素間隔開來；當位於左方時，則可藉此建立縮排。這些動作均可依需要進行調整。 */
+																														      }
+																														      #name-themango{
+																																float:top;
+																																	font-size:large;
+																																		padding:5px;
+																																			position:absolute; 
+																																				width:40%;
+																																					height:50px;
+																																						background-color:none;
+																																							color:white;
+																																								margin-top:5px;
+																																								    margin-left:10px;
+																																								  }
+																																								  #pic-themango{
+																																								    	position:absolute;
+																																										top:25%;
+																																											float:left;
+																																												margin:5px;
+																																													margin-left:10px;
+																																												      }
+																																												      #about-themango{ 
+																																													    position:absolute;
+																																													    	top:25%;
+																																															left:52.5%;
+																																																float:right;
+																																																	width:40%;
+																																																	    margin:5px 5px 0px 5px;
+																																																	    	background-color:none;
+																																																			font-size:15px;
+																																																		      }
+																																																		      #shop-themango{
+																																																				position:absolute;
+																																																					float:left;
+																																																						margin:5px;
+																																																							top:80%;
+																																																						      }
+																																																						      #other{
+																																																								position:absolute;
+																																																									margin:5px;
+																																																										padding:10px;
+																																																											top:80%;
+																																																												left:52.5%;
+																																																													background-color:none;
+																																																												      }
+																																																												      ul, ol, dl { /* 由於瀏覽器之間的差異，最佳作法是在清單中使用零寬度的欄位間隔及邊界。為了保持一致，您可以在這裡指定所要的量，或在清單包含的清單項目 (LI、DT、DD) 上指定所要的量。請記住，除非您寫入較為特定的選取器，否則在此執行的作業將重疊顯示到 .nav 清單。 */
+																																																														padding: 0;
+																																																															margin: 0;
+																																																														      }
+																																																														      a img { /* 這個選取器會移除某些瀏覽器在影像由連結所圍繞時，影像周圍所顯示的預設藍色邊框 */
+																																																																border: none;
+																																																															      }
+																																																															      /* ~~ 網站連結的樣式設定必須保持此順序，包括建立滑過 (Hover) 效果的選取器群組在內。~~ */
+																																																															      a:link {
+																																																																	color:#CCC;
+																																																																		text-decoration: underline; /* 除非您要設定非常獨特的連結樣式，否則最好提供底線，以便快速看出 */
+																																																																	      }
+																																																																	      a:visited {
+																																																																			color: #ccc;
+																																																																				text-decoration: underline; 
+																																																																			      }
+																																																																			      a:hover, a:active, a:focus { /* 這個選取器群組可以讓使用鍵盤導覽的使用者，也和使用滑鼠的使用者一樣擁有相同的滑過體驗。 */
+																																																																					text-decoration: none;
+																																																																				      }
+																																																																				      ul.menu {
+																																																																						
+																																																																						list-style: none; /* 這會移除清單標記 */
+																																																																							border-top: 1px solid #FFF; /* 這會建立連結的上方邊框，其他則都會使用下方邊框放置在 LI 上 */
+																																																																								margin-bottom: 15px; /* 這會在下方的內容上建立導覽間的間距 */
+																																																																							      }
+																																																																							      ul.menu li {
+																																																																									border-bottom: 1px solid #FFF; /* 這會建立按鈕分隔 */
+																																																																								      }
+																																																																								      ul.menu a, ul.menu a:visited { /* 將這些選取器放入群組，即可確保您的連結即使在受到點擊後仍保有按鈕外觀 */
+																																																																										padding: 5px 5px 5px 15px;
+																																																																											display: block; /* 這會為連結提供區塊屬性，使連結能填滿包含它的整個 LI，讓整個區域都能回應滑鼠點按動作。 */
+																																																																												text-decoration: none;
+																																																																													background-color: #fc0; 
+																																																																														color: #000;
+																																																																													      }
+																																																																													      ul.menu a:hover, ul.menu a:active, ul.menu a:focus { /* 這會同時變更滑鼠及鍵盤導覽器的背景及文字顏色 */
+																																																																															color: #F30;
+																																																																														      }
+
+																																																																														      #footer {
+																																																																																position:static;
+																																																																																	padding:10px;
+																																																																																		background-color: #6F7D94;
+																																																																																			width:100%;
+																																																																																				text-align:center;
+																																																																																					clear:both;
+																																																																																				      }
