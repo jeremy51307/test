@@ -77,7 +77,7 @@ html,body, #container{
 																																											      #about-themango{ 
 																																												    position:absolute;
 																																												    	top:25%;
-																																														left:52.5%;
+																																														left:57.5%;
 																																															float:right;
 																																																width:40%;
 																																																    margin:5px 5px 0px 5px;
@@ -88,14 +88,14 @@ html,body, #container{
 																																																			position:absolute;
 																																																				float:left;
 																																																					margin:5px;
-																																																						top:80%;
+																																																						top:82.5%;
 																																																					      }
 																																																					      #other{
 																																																							position:absolute;
 																																																								margin:5px;
 																																																									padding:10px;
 																																																										top:80%;
-																																																											left:52.5%;
+																																																											left:57.5%;
 																																																												background-color:none;
 																																																											      }
 																																																											      ul, ol, dl { /* 由於瀏覽器之間的差異，最佳作法是在清單中使用零寬度的欄位間隔及邊界。為了保持一致，您可以在這裡指定所要的量，或在清單包含的清單項目 (LI、DT、DD) 上指定所要的量。請記住，除非您寫入較為特定的選取器，否則在此執行的作業將重疊顯示到 .nav 清單。 */
